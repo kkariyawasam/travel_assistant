@@ -36,9 +36,9 @@ GET /get_itinerary?destination=Paris&num_days=3
 "itinerary": "Day 1: Visit the Eiffel Tower 🗼...",
 "youtube_videos": [
 {
-"title": "Top 10 Places to Visit in Paris",
-"link": "https://www.youtube.com/watch?v=xyz123",
-"thumbnail": "https://img.youtube.com/..."
+  "title": "Top 10 Places to Visit in Paris",
+  "link": "https://www.youtube.com/watch?v=xyz123",
+  "thumbnail": "https://img.youtube.com/..."
 }
 ]
 }
