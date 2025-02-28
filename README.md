@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# **Travel Planner App**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**
 
-## Available Scripts
+The **Travel Planner App** is a web application that helps users generate personalized travel itineraries and discover popular travel videos from YouTube. The backend is built using **Flask**, while the frontend is developed with **React**.
 
-In the project directory, you can run:
+## **Features**
 
-### `npm start`
+- Generates a detailed travel itinerary using **OpenAI GPT-4**
+- Fetches top travel videos from **YouTube API**
+- Cross-Origin Resource Sharing (**CORS**) enabled for frontend-backend communication
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Technologies Used**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Backend (Flask)**
 
-### `npm test`
+- Flask (Python web framework)
+- OpenAI API (for generating itineraries)
+- YouTube Data API (for fetching videos)
+- Flask-CORS (to enable frontend communication)
+- Google API Client Library
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Frontend (React)**
 
-### `npm run build`
+- React.js (JavaScript UI framework)
+- Axios (for making API requests to the backend)
+- Bootstrap / Tailwind CSS (for styling)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Get Travel Itinerary & Videos **
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+GET /get_itinerary?destination=Paris&num_days=3
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ** Response Format: **
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+{
+"itinerary": "Day 1: Visit the Eiffel Tower 🗼...",
+"youtube_videos": [
+{
+"title": "Top 10 Places to Visit in Paris",
+"link": "https://www.youtube.com/watch?v=xyz123",
+"thumbnail": "https://img.youtube.com/..."
+}
+]
+}
